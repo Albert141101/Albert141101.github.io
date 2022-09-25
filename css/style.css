@@ -1,0 +1,302 @@
+:root {
+    --color1: #17181c;
+    --color2: #d19900;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.navbar {
+    background-color: var(--color1);
+}
+
+.btn:hover {
+    background-color: var(--color2);
+}
+
+#hero {
+    width: 100%;
+    height: 70vh;
+    background: url(https://cdn.pixabay.com/photo/2015/06/24/15/45/computer-820281_960_720.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .container {
+    position: relative;
+}
+
+
+#hero h1 {
+    position: relative;
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    animation: text 3s 1;
+}
+
+#hero h2 {
+    color: var(--color2);
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    text-align: center;
+    animation: text2 4s 1;
+}
+
+.opaque-bg {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+    padding: 1px 1px 5var(--color1)
+}
+
+#about {
+    background: var(--color1);
+}
+.typed-cursor span {
+    opacity: 0;
+}
+.header_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    animation-name: showHeader;
+    animation-duration: 1s;
+}
+
+@keyframes showHeader {
+    0%{
+        opacity: 0;
+        top: -70px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes text {
+    0%{
+        opacity: 0;
+        margin-bottom: 370px;
+    }
+    30%{
+        opacity: 1;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Skill Bar */
+.mh-skills .mh-professional-skill {
+    padding-right: 60px;
+    color: white;
+}
+
+.mh-skills .mh-professional-skill h3 {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    color: var(--color2);
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.mh-professional-skills {
+    padding-left: 20%;
+    color: white;
+}
+
+.mh-professional-skills h3 {
+    position: relative;
+    right: 30px;
+    top: 10px;
+    color: var(--color2);
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.mh-professional-skills .native {
+    position: relative;
+    right: 30px;
+    top: 10px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.mh-professional-progress li {
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mh-progress {
+    margin-bottom: 10px;
+    font: 900 1.14285/1 Cinzerl, cursive;
+    color: white;
+}
+
+.mh-progress .progressbar-text {
+    color: inherit !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.progress .progress-line {
+    height: 10px;
+    margin-right: 60px;
+}
+
+.progress .progress-line .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 60px;
+    transform: translateY(-35%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mh-progress .mh-progress-circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.mh-progress path:nth-child(1){
+    stroke: rgba(0, 0, 0, 0.7);
+} 
+
+.mh-progress path:nth-child(2){
+    stroke: var(--color2) !important;
+} 
+
+.candidatos {
+    position: relative;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.candidatos .parcial {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.candidatos .parcial .info {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.candidatos .parcial .info .nome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.candidatos .parcial .info .percentage-num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.candidatos .parcial .progressBar {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 39px 0 2px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+ .percentagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--color2);
+    transition: 3s all;
+    animation-duration: 3s;
+    animation-name: animationProgress;
+    font-family: 'Poppins', sans-serif;
+}
+
+.each-skills {
+    position: relative;
+    left: 28px;
+}
+
+.mh-professional-progress {
+    text-align: center;
+    position: relative;
+    right: 45px;
+}
+
+
+@keyframes animationProgress {
+    from {
+        width: 0;
+    }
+}
+#portfolio {
+    background: #131313ce;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
