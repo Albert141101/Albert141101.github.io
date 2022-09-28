@@ -68,9 +68,11 @@ body {
 #about {
     background: var(--color1);
 }
+
 .typed-cursor span {
     opacity: 0;
 }
+
 .header_fixed {
     position: fixed;
     top: 0;
@@ -82,39 +84,46 @@ body {
 }
 
 @keyframes showHeader {
-    0%{
+    0% {
         opacity: 0;
         top: -70px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         top: 0;
     }
 }
 
 @keyframes text {
-    0%{
+    0% {
         opacity: 0;
         margin-bottom: 370px;
     }
-    30%{
+
+    30% {
         opacity: 1;
     }
-    85%{
+
+    85% {
         letter-spacing: 8px;
     }
 }
+
 @keyframes text2 {
-    0%{
+    0% {
         opacity: 0;
     }
-    95%{
+
+    95% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 /* Skill Bar */
 .mh-skills .mh-professional-skill {
     padding-right: 60px;
@@ -205,13 +214,13 @@ body {
     height: 100px;
 }
 
-.mh-progress path:nth-child(1){
+.mh-progress path:nth-child(1) {
     stroke: rgba(0, 0, 0, 0.7);
-} 
+}
 
-.mh-progress path:nth-child(2){
+.mh-progress path:nth-child(2) {
     stroke: var(--color2) !important;
-} 
+}
 
 .candidatos {
     position: relative;
@@ -230,7 +239,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.candidatos .parcial .info .nome{
+.candidatos .parcial .info .nome {
     position: absolute;
     top: 0;
     left: 0;
@@ -257,7 +266,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
- .percentagem {
+.percentagem {
     position: absolute;
     top: 0;
     left: 0;
@@ -273,6 +282,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+@keyframes animationProgress {
+    from {
+        width: 0;
+    }
+}
+
 .each-skills {
     position: relative;
     left: 28px;
@@ -284,19 +299,16 @@ body {
     right: 45px;
 }
 
-
-@keyframes animationProgress {
-    from {
-        width: 0;
-    }
-}
 #portfolio {
     background: #131313ce;
 }
+
 footer {
     display: flex;
     justify-content: center;
 }
 
-
-
+.slider div img {
+    max-width: 100%;
+    padding: 10px;
+}

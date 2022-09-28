@@ -6,13 +6,33 @@ let typed = new Typed('#typed', { // Тут id того блока, в кото�
   loop: true, // Указываем, повторять ли анимацию
 });
 
-window.onscroll = function showHeader() {
-   header = document.getElementById('header');
+// skills = document.getElementById('showSkill');
+// console.log(skills)
 
-  if(scrollY > 200){
+
+
+window.addEventListener('scroll', function () {
+  skills = document.getElementsByClassName('showSkill');
+  // console.log(skills)
+  if (scrollY > 430) {
+    skills[0].classList.add('percentagem');
+    skills[1].classList.add('percentagem');
+    skills[2].classList.add('percentagem');
+    skills[3].classList.add('percentagem');
+    skills[4].classList.add('percentagem');
+    skills[5].classList.add('percentagem');
+    skills[6].classList.add('percentagem');
+  }
+});
+
+
+window.onscroll = function showHeader() {
+  header = document.getElementById('header');
+
+  if (scrollY > 200) {
     header.classList.add('header_fixed');
   }
-  else if (scrollY < 100){
+  else if (scrollY < 1) {
     header.classList.remove('header_fixed');
   }
 };
@@ -27,3 +47,12 @@ window.onscroll = function showHeader() {
 //     };
 //   };
 // };
+
+
+
+$('.single-item').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
