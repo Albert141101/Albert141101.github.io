@@ -13,6 +13,7 @@ let typed = new Typed('#typed', { // Тут id того блока, в кото�
 
 window.addEventListener('scroll', function () {
   skills = document.getElementsByClassName('showSkill');
+  aboutAnim = this.document.getElementsByClassName('aboutAnim');
   // console.log(skills)
   if (scrollY > 430) {
     skills[0].classList.add('percentagem');
@@ -23,7 +24,14 @@ window.addEventListener('scroll', function () {
     skills[5].classList.add('percentagem');
     skills[6].classList.add('percentagem');
   }
+  if(scrollY > 200){
+    aboutAnim[0].classList.add('aboutMe');
+    aboutAnim[1].classList.add('aboutMe');
+    aboutAnim[2].classList.add('aboutMe');
+  }
+
 });
+
 
 
 window.onscroll = function showHeader() {
