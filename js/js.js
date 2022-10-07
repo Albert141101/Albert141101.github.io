@@ -15,7 +15,7 @@ window.addEventListener('scroll', function () {
   skills = document.getElementsByClassName('showSkill');
   aboutAnim = this.document.getElementsByClassName('aboutAnim');
   // console.log(skills)
-  if (scrollY > 430) {
+  if (scrollY > 500) {
     skills[0].classList.add('percentagem');
     skills[1].classList.add('percentagem');
     skills[2].classList.add('percentagem');
@@ -59,8 +59,8 @@ window.onscroll = function showHeader() {
 
 
 $('.single-item').slick({
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1500,
 });
